@@ -9,7 +9,7 @@ const Game = require('./models/game');
 
 mongoose.Promise = global.Promise;
 
-const mongo_url = process.env.MONGODB_URI || 'mongodb://localhost:27017/rockpaperscissors';
+const mongo_url = process.env.MONGODB_URI || 'mongodb://localhost:27017/multiplayer-api';
 mongoose.connect(mongo_url);
 
 const app = feathers()
